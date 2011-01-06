@@ -1,0 +1,33 @@
+one:
+  nome: MyString
+  tipo: MyString
+  cargo: MyString
+  organizacao: MyString
+  veiculo: MyString
+  editoria: MyString
+  endereco: MyString
+  telefones: MyText
+  email: MyString
+  site: MyString
+  interesses: MyText
+  materias: MyText
+  participacoes: MyText
+  encontros: MyText
+  observacoes: MyText
+
+two:
+  nome: MyString
+  tipo: MyString
+  cargo: MyString
+  organizacao: MyString
+  veiculo: MyString
+  editoria: MyString
+  endereco: MyString
+  telefones: MyText
+  email: MyString
+  site: MyString
+  interesses: MyText
+  materias: MyText
+  participacoes: MyText
+  encontros: MyText
+  observacoes: MyText

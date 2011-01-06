@@ -1,0 +1,80 @@
+<% title "Cliente" %>
+
+<p>
+  <strong>Nome:</strong>
+  <%=h @client.nome %>
+</p>
+<p>
+  <strong>Razao Social:</strong>
+  <%=h @client.razao_social %>
+</p>
+<p>
+  <strong>Cnpj:</strong>
+  <%=h @client.cnpj %>
+</p>
+<p>
+  <strong>Endereco:</strong>
+  <%=h @client.endereco %>
+</p>
+<p>
+  <strong>Telefone:</strong>
+  <%=h @client.telefone %>
+</p>
+<p>
+  <strong>Email:</strong>
+  <%=h @client.email %>
+</p>
+<p>
+  <strong>Site:</strong>
+  <%=h @client.site %>
+</p>
+<p>
+  <strong>Classificacao:</strong>
+  <%=h @client.classificacao %>
+</p>
+<p>
+  <strong>Porte:</strong>
+  <%=h @client.porte %>
+</p>
+<p>
+  <strong>Atividade:</strong>
+  <%=h @client.atividade %>
+</p>
+<p>
+  <strong>Contato Atendimento:</strong>
+  <%=h @client.contato_atendimento %>
+</p>
+<p>
+  <strong>Administrador:</strong>
+  <%=h @client.administrador %>
+</p>
+<p>
+  <strong>Outros Contatos:</strong>
+  <%=h @client.outros_contatos %>
+</p>
+<p>
+  <strong>Servicos Contratados:</strong>
+  <%=h @client.servicos_contratados %>
+</p>
+<p>
+  <strong>Projetos Desenvolvidos:</strong>
+  <%=h @client.projetos_desenvolvidos %>
+</p>
+<p>
+  <strong>Recados:</strong>
+  <%=h @client.recados %>
+</p>
+<p>
+  <strong>Agenda:</strong>
+  <%=h @client.agenda %>
+</p>
+<p>
+  <strong>Obs:</strong>
+  <%=h @client.obs %>
+</p>
+
+<p>
+  <%= link_to "Editar", edit_client_path(@client) %> |
+  <%= link_to "Deletar", @client, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "Mostrar Todos", clients_path %>
+</p>

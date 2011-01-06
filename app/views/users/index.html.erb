@@ -1,0 +1,7 @@
+<% title "Usuários" %>
+
+<ul>
+	<%@users.each do |u|%>
+	<li><%=link_to u.username, "mailto:" + u.email%></li>
+	<%end%>
+</ul>

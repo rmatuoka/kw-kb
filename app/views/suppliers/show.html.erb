@@ -1,0 +1,56 @@
+<% title "Fornecedor" %>
+
+<p>
+  <strong>Nome Fantasia:</strong>
+  <%=h @supplier.nome_fantasia %>
+</p>
+<p>
+  <strong>Razao Social:</strong>
+  <%=h @supplier.razao_social %>
+</p>
+<p>
+  <strong>Cnpj:</strong>
+  <%=h @supplier.cnpj %>
+</p>
+<p>
+  <strong>Endereci:</strong>
+  <%=h @supplier.endereci %>
+</p>
+<p>
+  <strong>Telefone:</strong>
+  <%=h @supplier.telefone %>
+</p>
+<p>
+  <strong>Email:</strong>
+  <%=h @supplier.email %>
+</p>
+<p>
+  <strong>Site:</strong>
+  <%=h @supplier.site %>
+</p>
+<p>
+  <strong>Atividade:</strong>
+  <%=h @supplier.atividade %>
+</p>
+<p>
+  <strong>Contato:</strong>
+  <%=h @supplier.contato %>
+</p>
+<p>
+  <strong>Outros Contatos:</strong>
+  <%=h @supplier.outros_contatos %>
+</p>
+<p>
+  <strong>Servicos Realizados:</strong>
+  <%=h @supplier.servicos_realizados %>
+</p>
+<p>
+  <strong>Obs:</strong>
+  <%=h @supplier.obs %>
+</p>
+
+<p>
+  <%= link_to "Editar", edit_supplier_path(@supplier) %> |
+  <%= link_to "Deletar", @supplier, :confirm => 'Tem certeza?', :method => :delete %> |
+  <%= link_to "Ver todos", suppliers_path %>
+</p>

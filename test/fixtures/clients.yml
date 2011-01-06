@@ -1,0 +1,39 @@
+one:
+  nome: MyString
+  razao_social: MyString
+  cnpj: MyString
+  endereco: MyString
+  telefone: MyString
+  email: MyString
+  site: MyString
+  classificacao: MyString
+  porte: MyString
+  atividade: MyString
+  contato_atendimento: MyString
+  administrador: MyString
+  outros_contatos: MyText
+  servicos_contratados: MyText
+  projetos_desenvolvidos: MyText
+  recados: MyText
+  agenda: MyText
+  obs: MyText
+
+two:
+  nome: MyString
+  razao_social: MyString
+  cnpj: MyString
+  endereco: MyString
+  telefone: MyString
+  email: MyString
+  site: MyString
+  classificacao: MyString
+  porte: MyString
+  atividade: MyString
+  contato_atendimento: MyString
+  administrador: MyString
+  outros_contatos: MyText
+  servicos_contratados: MyText
+  projetos_desenvolvidos: MyText
+  recados: MyText
+  agenda: MyText
+  obs: MyText

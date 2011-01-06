@@ -1,0 +1,76 @@
+<% form_for @client do |f| %>
+  <%= f.error_messages %>
+  <p>
+    <%= f.label :nome %><br />
+    <%= f.text_field :nome %>
+  </p>
+  <p>
+    <%= f.label :razao_social %><br />
+    <%= f.text_field :razao_social %>
+  </p>
+  <p>
+    <%= f.label :cnpj %><br />
+    <%= f.text_field :cnpj %>
+  </p>
+  <p>
+    <%= f.label :endereco %><br />
+    <%= f.text_field :endereco %>
+  </p>
+  <p>
+    <%= f.label :telefone %><br />
+    <%= f.text_field :telefone %>
+  </p>
+  <p>
+    <%= f.label :email %><br />
+    <%= f.text_field :email %>
+  </p>
+  <p>
+    <%= f.label :site %><br />
+    <%= f.text_field :site %>
+  </p>
+  <p>
+    <%= f.label :classificacao %><br />
+    <%= f.text_field :classificacao %>
+  </p>
+  <p>
+    <%= f.label :porte %><br />
+    <%= f.text_field :porte %>
+  </p>
+  <p>
+    <%= f.label :atividade %><br />
+    <%= f.text_field :atividade %>
+  </p>
+  <p>
+    <%= f.label :contato_atendimento %><br />
+    <%= f.text_field :contato_atendimento %>
+  </p>
+  <p>
+    <%= f.label :administrador %><br />
+    <%= f.text_field :administrador %>
+  </p>
+  <p>
+    <%= f.label :outros_contatos %><br />
+    <%= f.text_area :outros_contatos %>
+  </p>
+  <p>
+    <%= f.label :servicos_contratados %><br />
+    <%= f.text_area :servicos_contratados %>
+  </p>
+  <p>
+    <%= f.label :projetos_desenvolvidos %><br />
+    <%= f.text_area :projetos_desenvolvidos %>
+  </p>
+  <p>
+    <%= f.label :recados %><br />
+    <%= f.text_area :recados %>
+  </p>
+  <p>
+    <%= f.label :agenda %><br />
+    <%= f.text_area :agenda %>
+  </p>
+  <p>
+    <%= f.label :obs %><br />
+    <%= f.text_area :obs %>
+  </p>
+  <p><%= f.submit %></p>
+<% end %>

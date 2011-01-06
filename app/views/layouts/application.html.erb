@@ -1,0 +1,43 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title><%= h(yield(:title) || "Untitled") %></title>
+    <%= stylesheet_link_tag 'application' %>
+    <%= yield(:head) %>
+  </head>
+  <body>
+    <div id="container">
+    	<div id="user_nav">
+		  <p align="right">
+			  <% if current_user %>
+			    <%= link_to "Editar", edit_user_path(:current) %> |
+			    <%= link_to "Logout", logout_path %> |
+			    <span>Bem vindo <strong><%= current_user.username %></strong>!</span>
+			  <% else %>
+			    <%= link_to "Registrar", new_user_path %> |
+			    <%= link_to "Login", login_path %>
+			  <% end %>
+		  </p>
+		</div>
+		
+		<div id="user_menu">
+			<%= link_to "Usuários", users_path %> |
+			<%= link_to "Clientes", clients_path %> | 
+			<%= link_to "Jornalistas", journalists_path %> |  
+			<%= link_to "Fornecedores", suppliers_path %> | 
+			<%= link_to "Contatos", contacts_path %>
+		</div>
+		
+      <%- flash.each do |name, msg| -%>
+        <%= content_tag :div, msg, :id => "flash_#{name}" %>
+      <%- end -%>
+
+      <%- if show_title? -%>
+        <h1><%=h yield(:title) %></h1>
+      <%- end -%>
+
+      <%= yield %>
+    </div>
+  </body>
+</html>

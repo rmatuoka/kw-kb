@@ -1,0 +1,68 @@
+<% title "Jornalistas" %>
+
+<p>
+  <strong>Nome:</strong>
+  <%=h @journalist.nome %>
+</p>
+<p>
+  <strong>Tipo:</strong>
+  <%=h @journalist.tipo %>
+</p>
+<p>
+  <strong>Cargo:</strong>
+  <%=h @journalist.cargo %>
+</p>
+<p>
+  <strong>Organizacao:</strong>
+  <%=h @journalist.organizacao %>
+</p>
+<p>
+  <strong>Veiculo:</strong>
+  <%=h @journalist.veiculo %>
+</p>
+<p>
+  <strong>Editoria:</strong>
+  <%=h @journalist.editoria %>
+</p>
+<p>
+  <strong>Endereco:</strong>
+  <%=h @journalist.endereco %>
+</p>
+<p>
+  <strong>Telefones:</strong>
+  <%=h @journalist.telefones %>
+</p>
+<p>
+  <strong>Email:</strong>
+  <%=h @journalist.email %>
+</p>
+<p>
+  <strong>Site:</strong>
+  <%=h @journalist.site %>
+</p>
+<p>
+  <strong>Interesses:</strong>
+  <%=h @journalist.interesses %>
+</p>
+<p>
+  <strong>Materias:</strong>
+  <%=h @journalist.materias %>
+</p>
+<p>
+  <strong>Participacoes:</strong>
+  <%=h @journalist.participacoes %>
+</p>
+<p>
+  <strong>Encontros:</strong>
+  <%=h @journalist.encontros %>
+</p>
+<p>
+  <strong>Observacoes:</strong>
+  <%=h @journalist.observacoes %>
+</p>
+
+<p>
+  <%= link_to "Editar", edit_journalist_path(@journalist) %> |
+  <%= link_to "Deletar", @journalist, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "Mostrar Todos", journalists_path %>
+</p>

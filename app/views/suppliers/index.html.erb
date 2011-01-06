@@ -1,0 +1,9 @@
+<% title "Fornecedores" %>
+
+<ul>
+	<%@suppliers.each do |s|%>
+		<li><%=link_to s.nome_fantasia, supplier_path(s) %></li>
+	<%end%>
+</ul>
+
+<p><%= link_to "Novo Fornecedor", new_supplier_path %></p>

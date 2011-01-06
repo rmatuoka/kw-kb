@@ -1,0 +1,48 @@
+<% title "Contato" %>
+
+<p>
+  <strong>Nome:</strong>
+  <%=h @contact.nome %>
+</p>
+<p>
+  <strong>Atividade:</strong>
+  <%=h @contact.atividade %>
+</p>
+<p>
+  <strong>Organizacao:</strong>
+  <%=h @contact.organizacao %>
+</p>
+<p>
+  <strong>Endereco:</strong>
+  <%=h @contact.endereco %>
+</p>
+<p>
+  <strong>Telefone:</strong>
+  <%=h @contact.telefone %>
+</p>
+<p>
+  <strong>Email:</strong>
+  <%=h @contact.email %>
+</p>
+<p>
+  <strong>Data Nascimento:</strong>
+  <%=h @contact.data_nascimento %>
+</p>
+<p>
+  <strong>Interesses:</strong>
+  <%=h @contact.interesses %>
+</p>
+<p>
+  <strong>Personalidade:</strong>
+  <%=h @contact.personalidade %>
+</p>
+<p>
+  <strong>Acompanhamento:</strong>
+  <%=h @contact.acompanhamento %>
+</p>
+
+<p>
+  <%= link_to "Editar", edit_contact_path(@contact) %> |
+  <%= link_to "Deletar", @contact, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "Mostrar Todos", contacts_path %>
+</p>

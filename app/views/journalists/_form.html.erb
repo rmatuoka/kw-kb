@@ -1,0 +1,64 @@
+<% form_for @journalist do |f| %>
+  <%= f.error_messages %>
+  <p>
+    <%= f.label :nome %><br />
+    <%= f.text_field :nome %>
+  </p>
+  <p>
+    <%= f.label :tipo %><br />
+    <%= f.text_field :tipo %>
+  </p>
+  <p>
+    <%= f.label :cargo %><br />
+    <%= f.text_field :cargo %>
+  </p>
+  <p>
+    <%= f.label :organizacao %><br />
+    <%= f.text_field :organizacao %>
+  </p>
+  <p>
+    <%= f.label :veiculo %><br />
+    <%= f.text_field :veiculo %>
+  </p>
+  <p>
+    <%= f.label :editoria %><br />
+    <%= f.text_field :editoria %>
+  </p>
+  <p>
+    <%= f.label :endereco %><br />
+    <%= f.text_field :endereco %>
+  </p>
+  <p>
+    <%= f.label :telefones %><br />
+    <%= f.text_area :telefones %>
+  </p>
+  <p>
+    <%= f.label :email %><br />
+    <%= f.text_field :email %>
+  </p>
+  <p>
+    <%= f.label :site %><br />
+    <%= f.text_field :site %>
+  </p>
+  <p>
+    <%= f.label :interesses %><br />
+    <%= f.text_area :interesses %>
+  </p>
+  <p>
+    <%= f.label :materias %><br />
+    <%= f.text_area :materias %>
+  </p>
+  <p>
+    <%= f.label :participacoes %><br />
+    <%= f.text_area :participacoes %>
+  </p>
+  <p>
+    <%= f.label :encontros %><br />
+    <%= f.text_area :encontros %>
+  </p>
+  <p>
+    <%= f.label :observacoes %><br />
+    <%= f.text_area :observacoes %>
+  </p>
+  <p><%= f.submit %></p>
+<% end %>

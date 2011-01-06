@@ -1,0 +1,27 @@
+one:
+  nome_fantasia: MyString
+  razao_social: MyString
+  cnpj: 1
+  endereci: MyString
+  telefone: MyString
+  email: MyString
+  site: MyString
+  atividade: MyText
+  contato: MyString
+  outros_contatos: MyText
+  servicos_realizados: MyText
+  obs: MyText
+
+two:
+  nome_fantasia: MyString
+  razao_social: MyString
+  cnpj: 1
+  endereci: MyString
+  telefone: MyString
+  email: MyString
+  site: MyString
+  atividade: MyText
+  contato: MyString
+  outros_contatos: MyText
+  servicos_realizados: MyText
+  obs: MyText

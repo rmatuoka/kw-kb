@@ -1,0 +1,8 @@
+<% title "Jornalistas" %>
+<ul>
+	<%@journalists.each do |j|%>
+		<li><%=link_to j.nome, journalist_path(j) %></li>
+	<%end%>
+</ul>
+
+<p><%= link_to "Novo Jornalista", new_journalist_path %></p>

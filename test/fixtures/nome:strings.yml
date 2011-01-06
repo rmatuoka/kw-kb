@@ -1,0 +1,19 @@
+one:
+  atividade: MyString
+  organizacao: MyString
+  endereco: MyString
+  telefone: MyString
+  email: MyString
+  data_nascimento: MyString
+  interesses: MyText
+  personalidade: MyText
+
+two:
+  atividade: MyString
+  organizacao: MyString
+  endereco: MyString
+  telefone: MyString
+  email: MyString
+  data_nascimento: MyString
+  interesses: MyText
+  personalidade: MyText
