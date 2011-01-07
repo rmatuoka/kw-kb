@@ -4,7 +4,7 @@ class UserSessionsController < ApplicationController
   end
   
   def create
-    @user_session = UserSession.new(params[:user_session].to_s)
+    @user_session = UserSession.new(params[:user_session])
     if @user_session.save
       flash[:notice] = "Successfully created user session."
       redirect_to root_url
